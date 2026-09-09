@@ -289,8 +289,8 @@
         const hero = document.createElement("section");
         hero.className = "hero";
         hero.innerHTML =
-            '<h1>Free Classic Movies &amp; TV</h1>' +
-            '<p>Public-domain features, cartoons, serials and television, ' +
+            '<h1>Classic Horror Movies</h1>' +
+            '<p>Public-domain horror features, shorts and cult classics, ' +
             'restored from the archives and streaming free. No subscription, ' +
             'no sign-up — just press play.</p>' +
             '<span class="hero-count">' + byId.size + ' titles · ' +
