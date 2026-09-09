@@ -1,0 +1,17 @@
+{
+    "id": "com.parkerdatalink.classichorror",
+    "version": "1.0.0",
+    "vendor": "Parker Data Link LLC",
+    "type": "web",
+    "main": "index.html",
+    "title": "Classic Horror Movies",
+    "icon": "icons/icon-80.png",
+    "largeIcon": "icons/icon-130.png",
+    "bgImage": "icons/splash-1280x720.png",
+    "splashBackground": "icons/splash-1280x720.png",
+    "iconColor": "#0b0b0b",
+    "bgColor": "#0b0b0b",
+    "resolution": "1920x1080",
+    "disableBackHistoryAPI": true,
+    "appDescription": "Public-domain horror features, shorts and cult classics, streaming free. No subscription, no sign-up."
+}

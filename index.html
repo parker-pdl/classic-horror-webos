@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Classic Horror Movies — Parker Data Link</title>
+<meta name="description" content="Public-domain horror features, shorts and cult classics, streaming free. No subscription, no sign-up.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="icons/icon-512.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+    <a class="brand" href="#" id="brand-home">
+        <img src="icons/icon-512.png" alt="" class="brand-mark">
+        <span class="brand-text">
+            <strong>Classic Horror Movies</strong>
+            <em>by Parker Data Link</em>
+        </span>
+    </a>
+
+    <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search titles…"
+               autocomplete="off" spellcheck="false" aria-label="Search titles">
+    </div>
+</header>
+
+<main id="app">
+    <div class="loading" id="loading">Loading the vault…</div>
+</main>
+
+<footer class="sitefoot">
+    <p>Every title here is public domain or openly licensed. Free to stream, no sign-up.</p>
+    <p class="tiny">© Parker Data Link LLC · <a href="https://parkerdatalink.com">parkerdatalink.com</a></p>
+</footer>
+
+<!-- ── Detail sheet ─────────────────────────────────────────────── -->
+<div class="sheet" id="sheet" hidden>
+    <div class="sheet-scrim" data-close></div>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+        <button class="icon-btn sheet-close" data-close aria-label="Close">&times;</button>
+        <div class="sheet-art" id="sheet-art"></div>
+        <div class="sheet-body">
+            <h2 id="sheet-title"></h2>
+            <p class="sheet-meta" id="sheet-meta"></p>
+            <p class="sheet-desc" id="sheet-desc"></p>
+            <div class="sheet-actions">
+                <button class="btn primary" id="btn-play">Play</button>
+                <button class="btn" id="btn-restart" hidden>Start over</button>
+            </div>
+            <p class="sheet-licence" id="sheet-licence"></p>
+        </div>
+    </div>
+</div>
+
+<!-- ── Player ───────────────────────────────────────────────────── -->
+<div class="player" id="player" hidden>
+    <button class="icon-btn player-close" id="player-close" aria-label="Back">&larr;</button>
+    <h3 class="player-title" id="player-title"></h3>
+    <p class="ad-badge" id="ad-badge" hidden>Advertisement</p>
+    <video id="video" controls playsinline preload="metadata"></video>
+    <p class="player-error" id="player-error" hidden></p>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/webos-remote.js"></script>
+</body>
+</html>
